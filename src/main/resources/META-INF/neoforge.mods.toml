@@ -1,0 +1,30 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "CC0-1.0"
+issueTrackerURL = "https://github.com/Infernum-Studio/MoreChatHistory/issues"
+
+[[mods]]
+modId = "morechathistory"
+version = "${version}"
+displayName = "More Chat History"
+authors = "JackFred"
+description = "Increases the length of the chat history."
+logoFile = "assets/morechathistory/icon.png"
+displayURL = "https://github.com/Infernum-Studio/MoreChatHistory"
+
+[[mixins]]
+config = "morechathistory.client.mixins.json"
+
+[[dependencies.morechathistory]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.morechathistory]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "CLIENT"
